@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A random password generator built using HTML5, CSS3 and JavaScript."
+    >
+
+    <meta
+        name="author"
+        content="Rukhsar Hussain"
+    >
+
+    <title>Random Password Generator | Veda Technology Task 17</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="page">
+
+        <section
+            class="password-container"
+            aria-labelledby="page-title"
+        >
+
+            <header class="header">
+
+                <p class="task-label">
+                    VEDA TECHNOLOGY • TASK 17
+                </p>
+
+                <h1 id="page-title">
+                    Random Password Generator
+                </h1>
+
+                <p class="description">
+                    Create a random password with your preferred
+                    length and character types.
+                </p>
+
+            </header>
+
+
+            <section class="generator-card">
+
+                <div class="password-display">
+
+                    <input
+                        type="text"
+                        id="password"
+                        readonly
+                        placeholder="Your password will appear here"
+                        aria-label="Generated password"
+                    >
+
+                    <button
+                        type="button"
+                        class="copy-button"
+                        id="copyButton"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+
+                <p
+                    class="status-message"
+                    id="statusMessage"
+                    aria-live="polite"
+                ></p>
+
+
+                <div class="length-section">
+
+                    <div class="length-header">
+
+                        <label for="length">
+                            Password Length
+                        </label>
+
+                        <strong id="lengthValue">
+                            12
+                        </strong>
+
+                    </div>
+
+                    <input
+                        type="range"
+                        id="length"
+                        min="4"
+                        max="30"
+                        value="12"
+                    >
+
+                </div>
+
+
+                <fieldset class="options">
+
+                    <legend>
+                        Character Types
+                    </legend>
+
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="uppercase"
+                            checked
+                        >
+
+                        <span>
+                            Uppercase
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="lowercase"
+                            checked
+                        >
+
+                        <span>
+                            Lowercase
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="numbers"
+                            checked
+                        >
+
+                        <span>
+                            Numbers
+                        </span>
+
+                    </label>
+
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="symbols"
+                        >
+
+                        <span>
+                            Symbols
+                        </span>
+
+                    </label>
+
+                </fieldset>
+
+
+                <button
+                    type="button"
+                    class="generate-button"
+                    id="generateButton"
+                >
+                    Generate Password
+                </button>
+
+            </section>
+
+
+            
+
+
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
